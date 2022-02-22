@@ -1,0 +1,523 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Adafruit_Feather_Generic A1
+U 1 1 61389DC7
+P 3150 2800
+F 0 "A1" H 3150 1414 50  0000 C CNN
+F 1 "Adafruit_Feather_Generic" H 3150 1323 50  0000 C CNN
+F 2 "Module:Adafruit_Feather_WithMountingHoles" H 3250 1450 50  0001 L CNN
+F 3 "https://cdn-learn.adafruit.com/downloads/pdf/adafruit-feather.pdf" H 3150 2000 50  0001 C CNN
+	1    3150 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x16 J1
+U 1 1 61389F0F
+P 2100 2700
+F 0 "J1" H 2180 2692 50  0000 L CNN
+F 1 "Conn_01x16" H 2180 2601 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical" H 2100 2700 50  0001 C CNN
+F 3 "~" H 2100 2700 50  0001 C CNN
+	1    2100 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x16 J2
+U 1 1 61389FD5
+P 5600 2850
+F 0 "J2" H 5519 1825 50  0000 C CNN
+F 1 "Conn_01x16" H 5519 1916 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical" H 5600 2850 50  0001 C CNN
+F 3 "~" H 5600 2850 50  0001 C CNN
+	1    5600 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x20 J4
+U 1 1 6138A36F
+P 1850 5950
+F 0 "J4" H 1930 5942 50  0000 L CNN
+F 1 "Conn_01x20" H 1930 5851 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Vertical" H 1850 5950 50  0001 C CNN
+F 3 "~" H 1850 5950 50  0001 C CNN
+	1    1850 5950
+	1    0    0    -1  
+$EndComp
+Text Label 2650 2000 2    50   ~ 0
+D0
+Text Label 2650 2100 2    50   ~ 0
+D1
+Text Label 2650 2200 2    50   ~ 0
+D2
+Text Label 2650 2300 2    50   ~ 0
+D3
+Text Label 2650 2400 2    50   ~ 0
+D4
+Text Label 2650 2500 2    50   ~ 0
+D5
+Text Label 2650 2600 2    50   ~ 0
+D6
+Text Label 2650 2700 2    50   ~ 0
+SPARE
+Text Label 2650 2900 2    50   ~ 0
+SCK
+Text Label 2650 3000 2    50   ~ 0
+MOSI
+Text Label 2650 3100 2    50   ~ 0
+MISO
+Text Label 2650 3300 2    50   ~ 0
+RX
+Text Label 2650 3400 2    50   ~ 0
+TX
+Text Label 2650 3600 2    50   ~ 0
+SDA
+Text Label 2650 3700 2    50   ~ 0
+SCL
+Text Label 3650 2000 0    50   ~ 0
+~RESET
+Text Label 3650 2300 0    50   ~ 0
+EN
+Text Label 3650 2400 0    50   ~ 0
+AREF
+Text Label 3650 2600 0    50   ~ 0
+A0
+Text Label 3650 2700 0    50   ~ 0
+A1
+Text Label 3650 2800 0    50   ~ 0
+A2
+Text Label 3650 2900 0    50   ~ 0
+A3
+Text Label 3650 3000 0    50   ~ 0
+A4
+Text Label 3650 3100 0    50   ~ 0
+A5
+$Comp
+L power:GNDD #PWR0101
+U 1 1 6138A6A7
+P 3150 4100
+F 0 "#PWR0101" H 3150 3850 50  0001 C CNN
+F 1 "GNDD" H 3154 3945 50  0000 C CNN
+F 2 "" H 3150 4100 50  0001 C CNN
+F 3 "" H 3150 4100 50  0001 C CNN
+	1    3150 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0102
+U 1 1 6138A7C5
+P 3050 1600
+F 0 "#PWR0102" H 3050 1450 50  0001 C CNN
+F 1 "+BATT" H 3065 1773 50  0000 C CNN
+F 2 "" H 3050 1600 50  0001 C CNN
+F 3 "" H 3050 1600 50  0001 C CNN
+	1    3050 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0103
+U 1 1 6138A838
+P 3250 1600
+F 0 "#PWR0103" H 3250 1450 50  0001 C CNN
+F 1 "+3V3" H 3265 1773 50  0000 C CNN
+F 2 "" H 3250 1600 50  0001 C CNN
+F 3 "" H 3250 1600 50  0001 C CNN
+	1    3250 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR0104
+U 1 1 6138A8AB
+P 3350 1600
+F 0 "#PWR0104" H 3350 1450 50  0001 C CNN
+F 1 "VBUS" H 3365 1773 50  0000 C CNN
+F 2 "" H 3350 1600 50  0001 C CNN
+F 3 "" H 3350 1600 50  0001 C CNN
+	1    3350 1600
+	1    0    0    -1  
+$EndComp
+Text Label 1900 2000 2    50   ~ 0
+~RESET
+$Comp
+L power:+3V3 #PWR0105
+U 1 1 6138AD2B
+P 1600 1900
+F 0 "#PWR0105" H 1600 1750 50  0001 C CNN
+F 1 "+3V3" H 1615 2073 50  0000 C CNN
+F 2 "" H 1600 1900 50  0001 C CNN
+F 3 "" H 1600 1900 50  0001 C CNN
+	1    1600 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1900 1600 2100
+Wire Wire Line
+	1600 2100 1900 2100
+$Comp
+L power:GNDD #PWR0106
+U 1 1 6138AD4A
+P 1600 2400
+F 0 "#PWR0106" H 1600 2150 50  0001 C CNN
+F 1 "GNDD" H 1604 2245 50  0000 C CNN
+F 2 "" H 1600 2400 50  0001 C CNN
+F 3 "" H 1600 2400 50  0001 C CNN
+	1    1600 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 2300 1600 2300
+Wire Wire Line
+	1600 2300 1600 2400
+$Comp
+L power:+3V3 #PWR0107
+U 1 1 6138AEDF
+P 1550 4950
+F 0 "#PWR0107" H 1550 4800 50  0001 C CNN
+F 1 "+3V3" H 1565 5123 50  0000 C CNN
+F 2 "" H 1550 4950 50  0001 C CNN
+F 3 "" H 1550 4950 50  0001 C CNN
+	1    1550 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0108
+U 1 1 6138AF10
+P 1550 7050
+F 0 "#PWR0108" H 1550 6800 50  0001 C CNN
+F 1 "GNDD" H 1554 6895 50  0000 C CNN
+F 2 "" H 1550 7050 50  0001 C CNN
+F 3 "" H 1550 7050 50  0001 C CNN
+	1    1550 7050
+	1    0    0    -1  
+$EndComp
+Text Label 1900 2400 2    50   ~ 0
+A0
+Text Label 1900 2500 2    50   ~ 0
+A1
+Text Label 1900 2600 2    50   ~ 0
+A2
+Text Label 1900 2700 2    50   ~ 0
+A3
+Text Label 1900 2800 2    50   ~ 0
+A4
+Text Label 1900 2900 2    50   ~ 0
+A5
+Text Label 1900 3000 2    50   ~ 0
+SCK
+Text Label 1900 3100 2    50   ~ 0
+MOSI
+Text Label 1900 3200 2    50   ~ 0
+MISO
+Text Label 1900 3300 2    50   ~ 0
+RX
+Text Label 1900 3400 2    50   ~ 0
+TX
+Text Label 5400 3650 2    50   ~ 0
+SDA
+Text Label 5400 3550 2    50   ~ 0
+SCL
+Text Label 5400 3450 2    50   ~ 0
+D0
+Text Label 5400 3350 2    50   ~ 0
+D1
+Text Label 5400 3250 2    50   ~ 0
+D2
+Text Label 5400 3150 2    50   ~ 0
+D3
+Text Label 5400 3050 2    50   ~ 0
+D4
+Text Label 5400 2950 2    50   ~ 0
+D5
+Text Label 5400 2850 2    50   ~ 0
+D6
+Text Label 1900 3500 2    50   ~ 0
+SPARE
+Text Label 1900 2200 2    50   ~ 0
+AREF
+Text Label 5400 2650 2    50   ~ 0
+EN
+$Comp
+L power:VBUS #PWR0109
+U 1 1 6138B1C7
+P 4900 2650
+F 0 "#PWR0109" H 4900 2500 50  0001 C CNN
+F 1 "VBUS" H 4915 2823 50  0000 C CNN
+F 2 "" H 4900 2650 50  0001 C CNN
+F 3 "" H 4900 2650 50  0001 C CNN
+	1    4900 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2650 4900 2750
+Wire Wire Line
+	4900 2750 5400 2750
+$Comp
+L power:+BATT #PWR0110
+U 1 1 6138B21F
+P 5050 2400
+F 0 "#PWR0110" H 5050 2250 50  0001 C CNN
+F 1 "+BATT" H 5065 2573 50  0000 C CNN
+F 2 "" H 5050 2400 50  0001 C CNN
+F 3 "" H 5050 2400 50  0001 C CNN
+	1    5050 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2400 5050 2550
+Wire Wire Line
+	5050 2550 5400 2550
+$Comp
+L power:+3V3 #PWR0111
+U 1 1 6138B4B5
+P 5200 2150
+F 0 "#PWR0111" H 5200 2000 50  0001 C CNN
+F 1 "+3V3" H 5215 2323 50  0000 C CNN
+F 2 "" H 5200 2150 50  0001 C CNN
+F 3 "" H 5200 2150 50  0001 C CNN
+	1    5200 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2250 5200 2250
+Wire Wire Line
+	5200 2250 5200 2150
+$Comp
+L power:GNDD #PWR0112
+U 1 1 6138B5FD
+P 5200 2450
+F 0 "#PWR0112" H 5200 2200 50  0001 C CNN
+F 1 "GNDD" H 5204 2295 50  0000 C CNN
+F 2 "" H 5200 2450 50  0001 C CNN
+F 3 "" H 5200 2450 50  0001 C CNN
+	1    5200 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2450 5400 2450
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 6138C442
+P 4450 2200
+F 0 "J3" H 4530 2192 50  0000 L CNN
+F 1 "Conn_01x04" H 4530 2101 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4450 2200 50  0001 C CNN
+F 3 "~" H 4450 2200 50  0001 C CNN
+	1    4450 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0113
+U 1 1 6138C62A
+P 4100 2050
+F 0 "#PWR0113" H 4100 1900 50  0001 C CNN
+F 1 "+3V3" H 4115 2223 50  0000 C CNN
+F 2 "" H 4100 2050 50  0001 C CNN
+F 3 "" H 4100 2050 50  0001 C CNN
+	1    4100 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0114
+U 1 1 6138C641
+P 4100 2450
+F 0 "#PWR0114" H 4100 2200 50  0001 C CNN
+F 1 "GNDD" H 4104 2295 50  0000 C CNN
+F 2 "" H 4100 2450 50  0001 C CNN
+F 3 "" H 4100 2450 50  0001 C CNN
+	1    4100 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2400 4100 2400
+Wire Wire Line
+	4100 2400 4100 2450
+Wire Wire Line
+	4250 2200 4100 2200
+Wire Wire Line
+	4100 2200 4100 2050
+Wire Wire Line
+	1650 5350 1550 5350
+Wire Wire Line
+	1550 5350 1550 4950
+Wire Wire Line
+	1650 5550 1550 5550
+Wire Wire Line
+	1550 5550 1550 7050
+$Comp
+L Connector_Generic:Conn_01x20 J5
+U 1 1 6138D268
+P 2700 5950
+F 0 "J5" H 2780 5942 50  0000 L CNN
+F 1 "Conn_01x20" H 2780 5851 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Vertical" H 2700 5950 50  0001 C CNN
+F 3 "~" H 2700 5950 50  0001 C CNN
+	1    2700 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0115
+U 1 1 6138D26E
+P 2400 4950
+F 0 "#PWR0115" H 2400 4800 50  0001 C CNN
+F 1 "+3V3" H 2415 5123 50  0000 C CNN
+F 2 "" H 2400 4950 50  0001 C CNN
+F 3 "" H 2400 4950 50  0001 C CNN
+	1    2400 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0116
+U 1 1 6138D274
+P 2400 7050
+F 0 "#PWR0116" H 2400 6800 50  0001 C CNN
+F 1 "GNDD" H 2404 6895 50  0000 C CNN
+F 2 "" H 2400 7050 50  0001 C CNN
+F 3 "" H 2400 7050 50  0001 C CNN
+	1    2400 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 5350 2400 5350
+Wire Wire Line
+	2400 5350 2400 4950
+Wire Wire Line
+	2500 5550 2400 5550
+Wire Wire Line
+	2400 5550 2400 7050
+$Comp
+L Connector_Generic:Conn_01x20 J6
+U 1 1 6138D458
+P 3550 5950
+F 0 "J6" H 3630 5942 50  0000 L CNN
+F 1 "Conn_01x20" H 3630 5851 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Vertical" H 3550 5950 50  0001 C CNN
+F 3 "~" H 3550 5950 50  0001 C CNN
+	1    3550 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0117
+U 1 1 6138D45E
+P 3250 4950
+F 0 "#PWR0117" H 3250 4800 50  0001 C CNN
+F 1 "+3V3" H 3265 5123 50  0000 C CNN
+F 2 "" H 3250 4950 50  0001 C CNN
+F 3 "" H 3250 4950 50  0001 C CNN
+	1    3250 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0118
+U 1 1 6138D464
+P 3250 7050
+F 0 "#PWR0118" H 3250 6800 50  0001 C CNN
+F 1 "GNDD" H 3254 6895 50  0000 C CNN
+F 2 "" H 3250 7050 50  0001 C CNN
+F 3 "" H 3250 7050 50  0001 C CNN
+	1    3250 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 5350 3250 5350
+Wire Wire Line
+	3250 5350 3250 4950
+Wire Wire Line
+	3350 5550 3250 5550
+Wire Wire Line
+	3250 5550 3250 7050
+$Comp
+L Connector_Generic:Conn_01x20 J7
+U 1 1 6138D6D0
+P 4400 5950
+F 0 "J7" H 4480 5942 50  0000 L CNN
+F 1 "Conn_01x20" H 4480 5851 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Vertical" H 4400 5950 50  0001 C CNN
+F 3 "~" H 4400 5950 50  0001 C CNN
+	1    4400 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0119
+U 1 1 6138D6D6
+P 4100 4950
+F 0 "#PWR0119" H 4100 4800 50  0001 C CNN
+F 1 "+3V3" H 4115 5123 50  0000 C CNN
+F 2 "" H 4100 4950 50  0001 C CNN
+F 3 "" H 4100 4950 50  0001 C CNN
+	1    4100 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0120
+U 1 1 6138D6DC
+P 4100 7050
+F 0 "#PWR0120" H 4100 6800 50  0001 C CNN
+F 1 "GNDD" H 4104 6895 50  0000 C CNN
+F 2 "" H 4100 7050 50  0001 C CNN
+F 3 "" H 4100 7050 50  0001 C CNN
+	1    4100 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 5350 4100 5350
+Wire Wire Line
+	4100 5350 4100 4950
+Wire Wire Line
+	4200 5550 4100 5550
+Wire Wire Line
+	4100 5550 4100 7050
+$Comp
+L Connector_Generic:Conn_01x20 J8
+U 1 1 6138D9F6
+P 5250 5950
+F 0 "J8" H 5330 5942 50  0000 L CNN
+F 1 "Conn_01x20" H 5330 5851 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Vertical" H 5250 5950 50  0001 C CNN
+F 3 "~" H 5250 5950 50  0001 C CNN
+	1    5250 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0121
+U 1 1 6138D9FC
+P 4950 4950
+F 0 "#PWR0121" H 4950 4800 50  0001 C CNN
+F 1 "+3V3" H 4965 5123 50  0000 C CNN
+F 2 "" H 4950 4950 50  0001 C CNN
+F 3 "" H 4950 4950 50  0001 C CNN
+	1    4950 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0122
+U 1 1 6138DA02
+P 4950 7050
+F 0 "#PWR0122" H 4950 6800 50  0001 C CNN
+F 1 "GNDD" H 4954 6895 50  0000 C CNN
+F 2 "" H 4950 7050 50  0001 C CNN
+F 3 "" H 4950 7050 50  0001 C CNN
+	1    4950 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 5350 4950 5350
+Wire Wire Line
+	4950 5350 4950 4950
+Wire Wire Line
+	5050 5550 4950 5550
+Wire Wire Line
+	4950 5550 4950 7050
+$EndSCHEMATC
